@@ -2,6 +2,8 @@
 
 Desenvolvido por <a src="https://www.instagram.com/vivianezzt/">Viviane Silva</a>
 
+<img src="https://raw.githubusercontent.com/vivianezzt/projeto-portfolio-EBAC/main/img/portfolio.png">
+
 # Projeto Portfólio
 
 Passo a Passo
@@ -124,5 +126,5 @@ npm install --save-dev @types/styled-components
 
 In the project directory, you can run:
 
-### `npm start`
+ `npm start`
 
