@@ -1,20 +1,25 @@
 import Avatar from '../../components/Avatar'
 import Paragrafo from '../../components/Paragrafo'
 import Titulo from '../../components/Title'
+
 import { Descricao, BotaoTema, SidebarConteiner } from './styles'
 
-const Sidebar = () => (
+type Props = {
+  trocaTema: () => void
+}
+
+const Sidebar = (props: Props) => (
   <aside>
     <SidebarConteiner>
       <Avatar />
-      <Titulo fontSize={20}>Viviane Silva</Titulo>
+      <Titulo fontSize={20}>Gian Souza</Titulo>
       <Paragrafo tipo="secundario" fontSize={16}>
-        @vivianezzt
+        ogiansouza
       </Paragrafo>
-      <Descricao tipo="principal" fontSize={14}>
-        Fullstack Java
+      <Descricao tipo="principal" fontSize={12}>
+        Engenheiro front-end
       </Descricao>
-      <BotaoTema>Trocar tema</BotaoTema>
+      <BotaoTema onClick={props.trocaTema}>Trocar tema</BotaoTema>
     </SidebarConteiner>
   </aside>
 )
